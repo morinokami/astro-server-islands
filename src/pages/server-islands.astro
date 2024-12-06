@@ -1,0 +1,11 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SlowComponent from "../components/SlowComponent.astro";
+---
+
+<Layout>
+  <h1>Server Islands</h1>
+  <SlowComponent server:defer>
+    <div slot="fallback">Loading...</div>
+  </SlowComponent>
+</Layout>

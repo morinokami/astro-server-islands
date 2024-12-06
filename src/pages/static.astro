@@ -1,0 +1,11 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SlowComponent from "../components/SlowComponent.astro";
+
+export const prerender = true;
+---
+
+<Layout>
+  <h1>Static</h1>
+  <SlowComponent />
+</Layout>
