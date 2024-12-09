@@ -1,0 +1,11 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SlowComponent from "../components/SlowComponent.astro";
+
+export const prerender = false;
+---
+
+<Layout>
+  <h1>On Demand + Server Islands</h1>
+  <SlowComponent server:defer />
+</Layout>
